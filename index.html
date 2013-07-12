@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="jqm.css">	
 	</head>
 	<body>
 		<!--Content-->
-		hello world
+	<div data-role="page" id="home" data-content-theme="b">
+
+		<div data-role="header" data-position="fixed">
+			<h1>DOGFIGHT</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<h2>CTA IMAGE</h2>
+			<p>(link to add character)</p><br/>
+			<ul data-role="listview">
+				<li><a href="#view">View Dogfigters</a></li>
+			</ul>	
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="notext"></a></li>
+					<li><a href="#add" data-icon="plus" data-iconpos="notext"></a></li>
+					<li><a href="#info" data-icon="info" data-iconpos="notext"></a></li>
+				</ul>
+			</div><!-- /navbar --> 
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
+
+	<div data-role="page" id="add" data-content-theme="b">
+
+		<div data-role="header" data-position="fixed">
+			<h1>ADD CHARATER</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<p>Form</p>		
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="notext"></a></li>
+					<li><a href="#add" data-icon="plus" data-iconpos="notext"></a></li>
+					<li><a href="#info" data-icon="info" data-iconpos="notext"></a></li>
+				</ul>
+			</div><!-- /navbar --> 
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
+	
+	<div data-role="page" id="info" data-content-theme="b">
+
+		<div data-role="header" data-position="fixed">
+			<h1>ABOUT</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<p>Info</p>		
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="notext"></a></li>
+					<li><a href="#add" data-icon="plus" data-iconpos="notext"></a></li>
+					<li><a href="#info" data-icon="info" data-iconpos="notext"></a></li>
+				</ul>
+			</div><!-- /navbar --> 
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
+	
+	<div data-role="page" id="view" data-add-back-btn="true" data-content-theme="b">
+
+		<div data-role="header" data-position="fixed">
+			<h1>DOGFIGHTERS</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<p>Character List</p>		
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="notext"></a></li>
+					<li><a href="#add" data-icon="plus" data-iconpos="notext"></a></li>
+					<li><a href="#info" data-icon="info" data-iconpos="notext"></a></li>
+				</ul>
+			</div><!-- /navbar --> 
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
 		<!--Scripts-->
 		<script src="main.js"></script>
+		<script src="jq.js"></script>
+		<script src="jqm.js"></script>
 	</body>
 </html>
