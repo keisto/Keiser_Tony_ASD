@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="jqm.css">	
+		<link rel="stylesheet" href="main.css">
+		<script src="jq.js"></script>
 	</head>
 	<body>
 		<!--Content-->
@@ -40,9 +41,44 @@
 		</div><!-- /header -->
 
 		<div data-role="content">	
-			<p>Form</p>		
+				<form>
+				<input type="text" name="name" id="name" value="" data-clear-btn="true" placeholder="Charater Name" />	
+				<p class="center">(Breed Image)</p>		
+				
+			<div data-role="fieldcontain ">
+			   <select name="breed" id="breed" data-native-menu="false">
+			  	 <option date-placeholder="true" value="">Select Breed</option>
+			      <option value="Labrador">Labrador</option>
+			      <option value="Beagle">Beagle</option>
+			      <option value="Bulldog">Bulldog</option>
+			      <option value="Boxer">Boxer</option>
+			      <option value="Schnauzers">Schnauzers</option>
+			   </select>
+			</div>
+			   <label for="attack">Attack:</label><input type="range" value="" min="0" max="10" id="attack" disabled="disabled" data-theme="a" data-track-theme="b" >
+			   <label for="defense">Defense:</label><input type="range" value="" min="0" max="10" id="defense" disabled="disabled" data-theme="a" data-track-theme="b" >
+			   <label for="speed">Speed:</label><input type="range" value="" min="0" max="10" id="speed" disabled="disabled" data-theme="a" data-track-theme="b" >			
+
+			<hr/>
+			<div data-role="fieldcontain ">
+			   <select name="plane" id="plane" data-native-menu="false">
+			  	 <option date-placeholder="true" value="">Select Plane</option>
+			      <option value="Messerschmitt">Messerschmitt</option>
+			      <option value="Gotha">Gotha</option>
+			      <option value="Lockheed">Lockheed</option>
+			      <option value="Arado">Arado</option>
+			      <option value="Bell">Bell</option>				      
+			   </select>
+			</div>
+
+				   
+				</form>
 		</div><!-- /content -->
-		
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><input type="reset" value="Reset"></div>
+				<div class="ui-block-b"></div>
+				<div class="ui-block-c"><input type="submit" id="view" data-theme="b" value="Add"></div>
+			</div>
 		<div data-role="footer" data-position="fixed"> 
 			<div data-role="navbar">
 				<ul>
@@ -84,7 +120,8 @@
 		</div><!-- /header -->
 
 		<div data-role="content">	
-			<p>Character List</p>		
+			<div id="display"  data-role="collapsible-set">
+			</div>		
 		</div><!-- /content -->
 		
 		<div data-role="footer" data-position="fixed"> 
@@ -100,7 +137,6 @@
 	</div><!-- /page -->
 		<!--Scripts-->
 		<script src="main.js"></script>
-		<script src="jq.js"></script>
 		<script src="jqm.js"></script>
 	</body>
 </html>
