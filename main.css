@@ -4,3 +4,23 @@
 	Week 1
 */
 
+body {
+background-color: black;
+color:lime;
+}
+
+.center {
+	text-align: center;
+}
+
+div.ui-slider{
+	margin:20px;
+}
+.ui-disabled {
+filter: Alpha(Opacity=60);
+opacity: .6;
+}
+
+.stats{
+	display: inline;
+}
