@@ -1,0 +1,34 @@
+{ 
+		"breeds":	[
+			{
+					"breed"   :	"Labrador",
+					"attack"  : '7',
+					"defense" : '7',
+					"speed"   : '6'
+			},
+			{
+					"breed"   :	"Beagle",
+					"attack"  : '6',
+					"defense" : '6',
+					"speed"   : '8'
+			},
+			{
+					"breed"   :	"Bulldog",
+					"attack"  : '7',
+					"defense" : '10',
+					"speed"   : '3'
+			},
+			{
+					"breed"   :	"Boxer",
+					"attack"  : '9',
+					"defense" : '6',
+					"speed"   : '5'
+			},
+			{
+					"breed"   :	"Schnauzers",
+					"attack"  : '6',
+					"defense" : '5',
+					"speed"   : '9'
+			},
+		]
+	};
