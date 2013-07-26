@@ -1,0 +1,6 @@
+Title,Breed,Attack,Defense,Speed,Plane,Data
+    Larry,Labrador,7,7,6,Bell,csv
+    Mickey,Beagle,6,6,8,Arado,csv
+	Billy,Bulldog,7,10,3,Lockheed,csv
+	Joe,Boxer,9,6,5,Gotha,csv
+	Teddy,Schnauzers,6,5,9,Messerschmitt,csv
