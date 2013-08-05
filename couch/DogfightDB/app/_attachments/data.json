@@ -1,0 +1,49 @@
+{ 
+		"characters":	[
+			{
+					"title"   :	"Larry",
+					"breed"   :	"Labrador",
+					"attack"  : '7',
+					"defense" : '7',
+					"speed"   : '6',
+					"plane"   : 'Bell',
+					"data"    : "json"
+			},
+			{
+					"title"   :	"Mickey",
+					"breed"   :	"Beagle",
+					"attack"  : '6',
+					"defense" : '6',
+					"speed"   : '8',
+					"plane"   : 'Arado',
+					"data"    : "json"
+			},
+			{
+					"title"   :	"Billy",
+					"breed"   :	"Bulldog",
+					"attack"  : '7',
+					"defense" : '10',
+					"speed"   : '3',
+					"plane"   : 'Lockheed',
+					"data"    : "json"
+			},
+			{
+					"title"   :	"Joe",
+					"breed"   :	"Boxer",
+					"attack"  : '9',
+					"defense" : '6',
+					"speed"   : '5',
+					"plane"   : 'Gotha',
+					"data"    : "json"
+			},
+			{
+					"title"   :	"Teddy",
+					"breed"   :	"Schnauzers",
+					"attack"  : "6",
+					"defense" : "5",
+					"speed"   : "9",
+					"plane"   : "Messerschmitt",
+					"data"    : "json"
+			},
+		]
+};

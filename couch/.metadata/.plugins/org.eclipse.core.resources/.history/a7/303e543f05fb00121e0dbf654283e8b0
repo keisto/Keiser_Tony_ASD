@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" href="main.css">
+<head>
+    <title>2.0.0-dev4 - Futon: Overview</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" href="style/layout.css?0.11.0" type="text/css">
+    <script src="script/json2.js"></script>
+    <script src="script/jquery.js?1.4.2"></script><script src="script/sha1.js"></script>
+    
+    <script src="script/jquery.couch.js?0.11.0"></script>
+    <script src="script/jquery.dialog.js?0.11.0"></script>
+    <script src="script/futon.js?0.11.0"></script>
+    <script src="script/futon.browse.js?0.11.0"></script>
+    <script src="script/futon.format.js?0.11.0"></script>
+ 
+	</head>
+	<body>
+		<!--Content-->
+	<div data-role="page" id="home" data-content-theme="b">
+
+		<div data-role="header" data-position="fixed">
+			<h1>DOGFIGHT</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<ul data-role="listview">
+				<li><a href="#view">View Dogfigters</a></li>
+			</ul><br/>
+			<h2>View Data by:</h2>
+			<div class="center" data-role="controlgroup" data-type="horizontal">
+			<a href="index.html" id="json" data-role="button">JSON</a>
+			<a href="index.html" id="xml" data-role="button">XML</a>
+			<a href="index.html" id="csv" data-role="button">CSV</a>
+			</div>
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="notext"></a></li>
+					<li><a href="#add" data-icon="plus" data-iconpos="notext"></a></li>
+					<li><a href="#info" data-icon="info" data-iconpos="notext"></a></li>
+				</ul>
+			</div><!-- /navbar --> 
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
+
+	<div data-role="page" id="add" data-content-theme="b">
+
+		<div data-role="header" data-position="fixed">
+			<h1>ADD CHARATER</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+				<form method="post" id="addCharater">
+				<input type="text" name="title" id="title" value="" data-clear-btn="true" placeholder="Charater Name" />	
+				<p class="center">(Breed Image)</p>		
+				
+			<div data-role="fieldcontain ">
+			   <select name="breed" id="breed" data-native-menu="false">
+			  	 <option date-placeholder="true" value="">Select Breed</option>
+			      <option value="Labrador">Labrador</option>
+			      <option value="Beagle">Beagle</option>
+			      <option value="Bulldog">Bulldog</option>
+			      <option value="Boxer">Boxer</option>
+			      <option value="Schnauzers">Schnauzers</option>
+			   </select>
+			</div>
+			   <label for="attack">Attack:</label><input type="range" value="" min="0" max="10" id="attack" disabled="disabled" data-theme="a" data-track-theme="b" >
+			   <label for="defense">Defense:</label><input type="range" value="" min="0" max="10" id="defense" disabled="disabled" data-theme="a" data-track-theme="b" >
+			   <label for="speed">Speed:</label><input type="range" value="" min="0" max="10" id="speed" disabled="disabled" data-theme="a" data-track-theme="b" >			
+
+			<hr/>
+			<div data-role="fieldcontain ">
+			   <select name="plane" id="plane" data-native-menu="false">
+			  	 <option date-placeholder="true" value="">Select Plane</option>
+			      <option value="Messerschmitt">Messerschmitt</option>
+			      <option value="Gotha">Gotha</option>
+			      <option value="Lockheed">Lockheed</option>
+			      <option value="Arado">Arado</option>
+			      <option value="Bell">Bell</option>				      
+			   </select>
+			</div>
+
+				   
+				</form>
+		</div><!-- /content -->
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><input type="reset" value="Reset"></div>
+				<div class="ui-block-b"></div>
+				<div class="ui-block-c"><input type="submit" id="submit" data-theme="b" value="Add"></div>
+			</div>
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="notext"></a></li>
+					<li><a href="#add" data-icon="plus" data-iconpos="notext"></a></li>
+					<li><a href="#info" data-icon="info" data-iconpos="notext"></a></li>
+				</ul>
+			</div><!-- /navbar --> 
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
+	
+	<div data-role="page" id="info" data-content-theme="b">
+
+		<div data-role="header" data-position="fixed">
+			<h1>ABOUT</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<p>Info</p>	
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="notext"></a></li>
+					<li><a href="#add" data-icon="plus" data-iconpos="notext"></a></li>
+					<li><a href="#info" data-icon="info" data-iconpos="notext"></a></li>
+				</ul>
+			</div><!-- /navbar --> 
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
+	
+	<div data-role="page" id="view" data-add-back-btn="true" data-content-theme="b">
+
+		<div data-role="header" data-position="fixed">
+			<h1>DOGFIGHTERS</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<div id="display"  data-role="collapsible-set">
+			</div>		
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="notext"></a></li>
+					<li><a href="#add" data-icon="plus" data-iconpos="notext"></a></li>
+					<li><a href="#info" data-icon="info" data-iconpos="notext"></a></li>
+				</ul>
+			</div><!-- /navbar --> 
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
+		<!--Scripts-->
+		<script src="main.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	</body>
+</html>

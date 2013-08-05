@@ -1,0 +1,28 @@
+//Tony Keiser
+//ASD 0713
+//Week 4
+console.log("hello");
+
+
+$.couch.alldDbs ({
+    success: function(data) {
+        console.log(data);
+    }
+});
+
+$(document).on('pageinit', '#home', function(){
+   // CouchDB Code
+   $.couch.db(""), {
+   		success:function(data){
+   			console.log(data);
+   		}
+   };
+});
+
+
+
+
+
+
+
+

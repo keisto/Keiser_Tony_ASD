@@ -1,0 +1,24 @@
+//Tony Keiser
+//ASD 0713
+//Week 4
+console.log("hello");
+
+
+
+$(document).on('pageinit', '#home', function(){
+   // CouchDB Code
+   console.log("hello agian");
+   $.couch.db("dogfight").view("dogfight/characters"), {
+   		success:function(data){
+   			console.log(data);
+   		}
+   };
+});
+
+
+
+
+
+
+
+
